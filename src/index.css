@@ -1,48 +1,108 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-html,body{
+html,
+body {
   height: 100%;
   width: 100%;
+  /* padding: 20px; */
 }
-
 .parent{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 20px;
+  height: 100vh;
+  width: 100%;
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: row; */
+  gap: 25px;
 }
 .card{
-  height: 400px;
-  width: 400px;
-  text-align: center;
-  background-color: rgb(110, 94, 213);
-  color: black;
-  margin: 20px;
-  padding: 29px;
-  border-radius: 12px;
+  height: 330px;
+  width: 280px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.card img{
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  object-fit: cover;
+.card .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
 
 }
-.card p ,h1,button{
-  margin: 20px 0;
+ .top img{
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  padding: 2px;
+ }
+.top button{
+  display: flex;
+  align-items: center;
+  border: 1px solid #dadada;
+  padding: 3px 6px;
+  font-size: 10px;
+  border-radius: 5px;
+  gap: 3px;
+  background-color: transparent;
+  color: #b1b1b1;
 }
-.card button{
-  padding: 10px 20px;
-  background-color: white;
-  color: black;
-  border: none;
+.center h3{
+  font-size: 18px;
+  font-weight: 500;
+}
+.center h3 span{
+  font-size: 10px;
+  font-weight: 400;
+  color: #8b8b8b;
+}
+
+.center h2{
+  font-size: 20px;
+}
+.center .tag{
+  display: flex;
+  margin-top: 10px;
+  gap: 5px;
+
+}
+.center .tag h4{
+  font-size: 12px;
+  background-color: #dadada;
+  color: #111;
+  font-weight: 500;
+  padding: 3px 6px;
   border-radius: 5px;
 }
-.card button:hover{
-  background-color: black;
+
+.bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top:1.5px solid #c8c8c8b4 ;
+  padding-top: 15px ;
+}
+.bottom button{
+  background-color: #333;
   color: white;
-  cursor: pointer;
+  height: 35px;
+  width: 100px;
+  border: none;
+  border-radius: 7px;
+}
+
+.bottom h3{
+  font-size: 17px;
+
+}
+.bottom p{
+  font-size: 12px;
+  color: #8b8b8b;
 }
